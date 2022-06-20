@@ -1,4 +1,4 @@
-package ru.itsjava.git;
+package ru.itsjava;
 
 public class MyClass {
 }

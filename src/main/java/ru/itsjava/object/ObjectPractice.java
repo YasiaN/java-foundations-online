@@ -1,7 +1,7 @@
-//package ru.itsjava.object;
-//
-//public class ObjectPractice {
-//    public static void main(String[] args) {
+package ru.itsjava.object;
+
+public class ObjectPractice {
+    public static void main(String[] args) {
 //        Object obj1 = new Object();
 //        Object obj2 = new Object();
 //        System.out.println(obj1==obj2);
@@ -55,8 +55,10 @@
 //        HomeElfwithLombok vinki = new HomeElfwithLombok ("vinki", 900);
 //        System.out.println("kikimer.equals(vinki) = " + kikimer.equals(vinki));
 //
-//
-//
-//
-//    }
-//}
+
+    Person harry = new Person("harry", 18);
+        System.out.println("harry.takeBeer() = " + harry.takeBeer());
+
+
+    }
+}
