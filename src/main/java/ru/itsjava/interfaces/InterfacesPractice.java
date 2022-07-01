@@ -2,11 +2,11 @@ package ru.itsjava.interfaces;
 
 public class InterfacesPractice {
     public static void main(String[] args) {
-//        Creatable khotabich = new Gin();
-//        khotabich.createWish();
-//
-//        Creatable badGin = new BadGin();
-//        badGin.createWish();
+        Creatable khotabich = new Gin();
+        khotabich.createWish();
+
+        Creatable badGin = new BadGin();
+        badGin.createWish();
 
 //        Walkable jack = new Man ();
 //        jack.walk();
@@ -18,14 +18,18 @@ public class InterfacesPractice {
 //        Swimable salmon = new Fish();
 //        salmon.swim();
 //        salmon.maxSwimSpeed();
+//
+//        Runnable vaska = new Dog ();
+//        vaska.maxRunDistance();
+//        vaska.run();
+//
+//        Runnable fluffy = new Cat();
+//        fluffy.maxRunDistance();
+//        fluffy.run();
 
-        Runnable vaska = new Dog ();
-        vaska.maxRunDistance();
-        vaska.run();
 
-        Runnable fluffy = new Cat();
-        fluffy.maxRunDistance();
-        fluffy.run();
-
+        khotabich.canYouCreateWish();
+        badGin.canYouCreateWish();
+        khotabich.howManyWishesDoUhave();
     }
 }

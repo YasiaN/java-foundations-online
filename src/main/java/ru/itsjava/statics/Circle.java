@@ -3,7 +3,7 @@ package ru.itsjava.statics;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public class Circle extends Figure {
+public class Circle {
 
 //    4. Добавить класс Круг в иерархию фигур. И создать константу PI.
 
