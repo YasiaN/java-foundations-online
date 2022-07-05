@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e880a046-0951-414f-8edd-7f418f47d168" name="Changes" comment="Added classwork and homework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/interfaces/BadGin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/interfaces/BadGin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/interfaces/Creatable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/interfaces/Creatable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/interfaces/InterfacesPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/interfaces/InterfacesPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/statics/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/statics/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/statics/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/statics/Figure.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,26 +61,13 @@
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.AbstractPractice">
+  <component name="RunManager" selected="Application.StringPractice">
     <configuration name="AbstractPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.itsjava.oop.inheritance.AbstractPractice" />
       <module name="java-foundations-online" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.itsjava.oop.inheritance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClonablePractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.clonable.ClonablePractice" />
-      <module name="java-foundations-online" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.itsjava.clonable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,13 +114,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StringPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.strings.StringPractice" />
+      <module name="java-foundations-online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.itsjava.strings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringPractice" />
         <item itemvalue="Application.AbstractPractice" />
         <item itemvalue="Application.GamesOfThrones" />
         <item itemvalue="Application.InterfacesPractice" />
         <item itemvalue="Application.ComparablePractice" />
-        <item itemvalue="Application.ClonablePractice" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +188,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656435449409</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added classwork and homework">
+      <created>1656685530116</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656685530116</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added classwork and homework">
+      <created>1656942590062</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656942590062</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
