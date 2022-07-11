@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e880a046-0951-414f-8edd-7f418f47d168" name="Changes" comment="Added classwork and homework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/statics/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/statics/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/statics/Figure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/statics/Figure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/exceptions/CalculatorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/exceptions/CalculatorException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/exceptions/ExceptionPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/exceptions/ExceptionPractice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1657029829265</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added classwork and homework">
+      <created>1657540677091</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657540677091</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added classwork and homework">
+      <created>1657540790440</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1657540790440</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
