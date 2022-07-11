@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e880a046-0951-414f-8edd-7f418f47d168" name="Changes" comment="Added classwork and homework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/statics/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/statics/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/statics/Figure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/statics/Figure.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +63,7 @@
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.StringPractice">
+  <component name="RunManager" selected="Application.ExceptionPractice">
     <configuration name="AbstractPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.itsjava.oop.inheritance.AbstractPractice" />
       <module name="java-foundations-online" />
@@ -75,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComparablePractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.comparable.ComparablePractice" />
+    <configuration name="ExceptionPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.exceptions.ExceptionPractice" />
       <module name="java-foundations-online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.itsjava.comparable.*" />
+          <option name="PATTERN" value="ru.itsjava.exceptions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExceptionPractice" />
         <item itemvalue="Application.StringPractice" />
         <item itemvalue="Application.AbstractPractice" />
         <item itemvalue="Application.GamesOfThrones" />
         <item itemvalue="Application.InterfacesPractice" />
-        <item itemvalue="Application.ComparablePractice" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656942590062</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added classwork and homework">
+      <created>1657029829265</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657029829265</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
