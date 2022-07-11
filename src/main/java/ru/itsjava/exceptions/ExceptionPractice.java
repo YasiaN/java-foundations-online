@@ -28,19 +28,28 @@ public class ExceptionPractice {
 //            System.out.println("Trowable");
 //        }
 
-        Calculator calculator = new Calculator();
+//        Calculator calculator = new Calculator();
+//
+//
+//        System.out.println("calculator.division(5,3) = " + calculator.division(5, 3));
+//
+//        try {
+//            System.out.println("calculator.division(5,0) = " + calculator.division(5, 0));
+//        } catch (CalculatorException ce) {
+//            System.out.println("Вы ввели что-то не то");
+//            ce.printStackTrace();
+//
+//        }
 
-
-        System.out.println("calculator.division(5,3) = " + calculator.division(5, 3));
-
+        Person person1 = new Person ("anna", 50);
         try {
-            System.out.println("calculator.division(5,0) = " + calculator.division(5, 0));
-        } catch (CalculatorException ce) {
-            System.out.println("Вы ввели что-то не то");
-            ce.printStackTrace();
-
+            System.out.println(person1.getAge());
+            if ((person1.getAge() < 0) || (person1.getAge() > 150)) {
+                throw new AgeNotValidException();
+            }
+        } catch (Exception ageNotValidException) {
+            ageNotValidException.printStackTrace();
         }
-
 
     }
 }
