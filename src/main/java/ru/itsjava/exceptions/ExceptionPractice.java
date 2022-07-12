@@ -50,6 +50,5 @@ public class ExceptionPractice {
         } catch (Exception ageNotValidException) {
             ageNotValidException.printStackTrace();
         }
-
     }
 }
