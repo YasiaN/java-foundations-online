@@ -1,6 +1,10 @@
 package ru.itsjava.collections.lists;
 
+import lombok.ToString;
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ArrayListPractice {
@@ -58,9 +62,9 @@ public class ArrayListPractice {
 ////а) Добавить подряд 5 элементов.
 //        Book HarryPotter1 = new Book("HP1", "J.K.Rowling", 500);
 //        Book HarryPotter2 = new Book("HP2", "J.K.Rowling", 600);
-//        Book HarryPotter3 = new Book("HP3", "J.K.Rowling",700);
-//        Book HarryPotter4 = new Book("HP4", "J.K.Rowling",1100);
-//        Book HarryPotter5 = new Book("HP5", "J.K.Rowling",900);
+//        Book HarryPotter3 = new Book("HP3", "J.K.Rowling", 700);
+//        Book HarryPotter4 = new Book("HP4", "J.K.Rowling", 1100);
+//        Book HarryPotter5 = new Book("HP5", "J.K.Rowling", 900);
 //
 //        listOf20Books.add(HarryPotter1);
 //        listOf20Books.add(HarryPotter2);
@@ -111,13 +115,152 @@ public class ArrayListPractice {
 //а) Вывести список на экран в формате: List: [ Book{"7 навыков высокоэффективных людей", "Кови", 387};
 //Book{"Java. Эффективное программирование", "Блох Дж.", 219};]
 
-        List<Book> list1 = new ArrayList<>(2);
-        Book book1 = new Book ("\"7 навыков высокоэффективных людей\"", "\"Кови\"", 387);
-        Book book2 = new Book ("\"Java. Эффективное программирование\"", "\"Блох Дж.\"", 219);
+//        List<Book> list1 = new ArrayList<>(2);
+//        Book book1 = new Book ("\"7 навыков высокоэффективных людей\"", "\"Кови\"", 387);
+//        Book book2 = new Book ("\"Java. Эффективное программирование\"", "\"Блох Дж.\"", 219);
+//
+//        list1.add(book1);
+//        list1.add(book2);
+//        System.out.println("list1 = " + list1);
 
-        list1.add(book1);
-        list1.add(book2);
-        System.out.println("list1 = " + list1);
+//        6. Отфильтровать список вернуть записи по некоторому условию:
+//а) Условие на индекс: Индекс делится на 3
 
+//        System.out.println("Записи с учётом условия на индекс: Индекс делится на 3");
+//
+//        for (int i = 0; i < listOf20Books.size(); i++) {
+//            if (i % 3 == 0) {
+//                System.out.println(listOf20Books.get(i));
+//            }
+//        }
+
+//        б) Условие на значение: Вернуть количество книг, которые равны "Java"
+//
+//        System.out.println("Вернуть количество книг, которые равны \"Java\"");
+//        for (Book elemBook : listOf20Books) {
+//            if (elemBook.getName().equals("Java")) {
+//                System.out.println(elemBook);
+//            }
+//        }
+//        System.out.println();
+
+//        7. Пропустить несколько первых элементов
+//а) Пропустить первые 3 книги в списке.
+
+//        System.out.println("Выводим книги без первых 3х книг в списке.");
+//        int count = 0;
+//        for (int i = 0; i < listOf20Books.size(); i++) {
+//
+//            if (count < 3) {
+//                count++;
+//            } else System.out.println(listOf20Books.get(i));;
+//        }
+
+// 6 + 7: Пропускаем элементы, которые удовлетворяют некоторому условию
+//а) Пропустить первые 2 книги, которые равные "Java"
+
+//        Book java1= new Book ("Java","James Gosling",900);
+//        Book java2= new Book ("Java","James Gosling",1000);
+//
+//        listOf20Books.add(java1);
+//        listOf20Books.add(java2);
+//
+//        System.out.println("Первоначальный список:"+listOf20Books);
+//        System.out.println("Пропустить первые 2 книги, которые равные \"Java\"");
+//        int countBooks = 0;
+//        for (Book elementBook : listOf20Books) {
+//            if ((elementBook.getName() == "Java") & (countBooks < 3)) {
+//                countBooks++;
+//            } else {
+//                System.out.println(elementBook);
+//            }
+//        }
+
+//        8. Вернуть первый подходящий элемент:
+//
+//а) Возвращаем первую книгу, длина автора которого делится на 3.
+//        Book java1 = new Book("Java ", "JamesGosling", 900);
+//        Book java2 = new Book("Java", "JamesGosling", 1000);
+//
+//        listOf20Books.add(java1);
+//        listOf20Books.add(java2);
+//        System.out.println("Список книг:");
+//        System.out.println(listOf20Books);
+//        System.out.println("Возвращаем первую книгу, длина автора которого делится на 3");
+//        for (Book elemBook : listOf20Books) {
+//            if (((elemBook.getAuthor().length()) % 3) == 0) {
+//                System.out.println(elemBook);
+//                break;
+//            }
+//
+//        }
+// 9. Возвращаем все элементы удовлетворяющие условию:
+//а) Возвращаем все книги, длина автора которых делится на 3.
+
+//        Book java1 = new Book("Java ", "JamesGosling", 900);
+//        Book java2 = new Book("Java ", "JamesGosling", 1000);
+//
+//        listOf20Books.add(java1);
+//        listOf20Books.add(java2);
+//
+//        System.out.println("Возвращаем все книги, длина автора которых делится на 3.");
+//        for (Book elemBook : listOf20Books) {
+//            if ((elemBook.getAuthor().length())%3==0) {
+//                System.out.println(elemBook);
+//            }
+//
+//        }
+
+//  10. Создать класс Person.( Поля: имя, возраст и пол isMale )
+////Вернуть всех военнообязанных мужчин (пол), которым меньше 27 и больше 18 и имя которых начинается на 'Н'
+
+//        Person jake = new Person("jake", 22, true);
+//        Person henk = new Person("henk", 50, true);
+//        Person hugo = new Person("hugo", 17, true);
+//        Person harry = new Person("harry", 25, true);
+//        Person henry = new Person("henry", 26, true);
+//        Person ann = new Person("ann", 19, false);
+//        List<Person> listService = new ArrayList<>(Arrays.asList(jake, henk, hugo, harry, henry, ann));
+//
+//        System.out.println("Список военнообязанных: ");
+//        System.out.println(listService);
+//
+//        System.out.println("Вернуть всех военнообязанных мужчин (пол), которым меньше 27 и больше 18 и имя которых начинается на 'Н':" );
+//        for (Person personService : listService) {
+//            if ((personService.isMale()) && (personService.getAge() < 27) && (personService.getAge() > 18) && (personService.getName().charAt(0) == 'h')) {
+//                System.out.println(personService);
+//            }
+//        }
+//        System.out.println();
+
+// 11. Найти средний возраст всех женщин.
+
+        Person ann = new Person("ann", 19, false);
+        Person kate = new Person("kate", 30, false);
+        Person joanna = new Person("joanna", 45, false);
+        Person clair = new Person("clair", 7, false);
+
+        List<Person> listWoman = new ArrayList<>(Arrays.asList(ann, kate, joanna, clair));
+        System.out.println("Найти средний возраст всех женщин.");
+
+
+        int countOfWomen = listWoman.size();
+        System.out.println("countOfWomen = " + countOfWomen);
+
+        int sumAgeOfAllWomen = 0;
+
+        for (Person elemWoman : listWoman) {
+            System.out.println(elemWoman.getAge());
+            sumAgeOfAllWomen += elemWoman.getAge(); // sumAgeOfAllWomen = sumAgeOfAllWomen+ elemWoman.getAge();
+            System.out.println(" значение sumAgeOfAllWomen:" + sumAgeOfAllWomen);
+
+        }
+        double averageAge = (double) sumAgeOfAllWomen/countOfWomen;
+        System.out.println("averageAge = " + averageAge);
     }
 }
+
+
+
+
+
