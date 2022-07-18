@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e880a046-0951-414f-8edd-7f418f47d168" name="Changes" comment="Added classwork and homework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/exceptions/ExceptionPractice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/exceptions/ExceptionPractice.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExceptionPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.exceptions.ExceptionPractice" />
+    <configuration name="ArrayPractice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.ArrayPractice2" />
       <module name="java-foundations-online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.itsjava.exceptions.*" />
+          <option name="PATTERN" value="ru.itsjava.collections.lists.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GamesOfThrones" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.oop.inheritance.GamesOfThrones" />
+    <configuration name="ExceptionPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.exceptions.ExceptionPractice" />
       <module name="java-foundations-online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.itsjava.oop.inheritance.*" />
+          <option name="PATTERN" value="ru.itsjava.exceptions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,10 +133,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ArrayListPractice" />
+        <item itemvalue="Application.ArrayPractice2" />
         <item itemvalue="Application.ExceptionPractice" />
         <item itemvalue="Application.StringPractice" />
         <item itemvalue="Application.AbstractPractice" />
-        <item itemvalue="Application.GamesOfThrones" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +247,21 @@
       <option name="project" value="LOCAL" />
       <updated>1657626106597</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added classwork and homework">
+      <created>1657653957691</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1657653957691</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added classwork and homework">
+      <created>1657908311525</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1657908311525</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
