@@ -19,16 +19,16 @@ public class MenuServiceImpl implements MenuService{
             System.out.println("Введите номер меню");
             int menuNum = scanner.nextInt();
             if (menuNum==1){
-                System.out.println("Вы выбрали Купить книгу");
-                clientService.buyBook();
+                System.out.println("Вы выбрали Купить кофе");
+                clientService.buyCoffee();
             }
             else if (menuNum==2) {
-                System.out.println("Вы выбрали положить книгу");
-                clientService.putBook();
+                System.out.println("Вы выбрали добавить новый вид кофе");
+                clientService.putCoffee();
             }
             else if (menuNum==3) {
-                System.out.println("Печатаем название книг");
-                clientService.putBook();
+                System.out.println("Печатаем название кофе");
+                clientService.printCoffee();
             }
             else {
                 System.out.println("До встречи!");
@@ -38,9 +38,8 @@ public class MenuServiceImpl implements MenuService{
 
     }
 
-    @Override
-    public void printMenu() {
-        System.out.println("1 - купить книгу, 2- отдать книгу, Всё остальное - выход");
+    private void printMenu() {
+        System.out.println("1 - купить кофе, 2- отдать кофе, 3- печатаем название кофе, Всё остальное - выход");
 
     }
 }

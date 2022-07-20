@@ -9,6 +9,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class Client {
     private final String name;
-    private final List<Book> books; // список с книгами
+    private final List<Coffee> coffees; // список с видами кофе
 
 }

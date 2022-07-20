@@ -1,7 +1,7 @@
 package ru.itsjava.services;
 
 import lombok.RequiredArgsConstructor;
-import ru.itsjava.domain.Book;
+import ru.itsjava.domain.Coffee;
 import ru.itsjava.domain.Client;
 
 import java.util.Scanner;
@@ -10,40 +10,43 @@ import java.util.Scanner;
 public class ClientServiceImpl implements  ClientService{
     private final Client client;
     private final Scanner scanner;
-    private final BookService bookService;
+    private final CoffeeService coffeeService;
 
     @Override
-    public void buyBook() {
-        System.out.println("Введите название книги");
-        Scanner scan = new Scanner (System.in);
+    public void buyCoffee() {
+        System.out.println("Введите название кофе, которое хотите купить");
         String title = scanner.next();
-        if (bookService.hasBook(title)) {
-            System.out.println("Покупаем книгу...");
-            bookService.takeBookByName(title);
-            System.out.println("Вы купили книгу "+title + ". Спасибо!");
+        if (coffeeService.hasCoffee(title)) {
+            System.out.println("Покупаем кофе...");
+            Coffee coffee = coffeeService.takeCoffeeByName(title);
+            System.out.println("Вы купили кофе "+ coffee + ". Спасибо!");
+            client.getCoffees().add(coffee);
         }
         else {
-            System.out.println("Не смогли купить книгу.... Такой книги нет. ");
+            System.out.println("Не смогли купить кофе.... Такого кофе нет. ");
         }
 
     }
 
     @Override
-    public void putBook() {
-        System.out.println("Введите название книги");
+    public void putCoffee() {
+        System.out.println("Хотите ли Вы передать пакет кофе для благотворительности?");
+        System.out.println("Введите название Вашего нового кофе");
         String title = scanner.next();
 
-        System.out.println("Введите автора книги");
-        String author = scanner.next();
+        System.out.println("Введите тип зёрен");
+        String typeOfBean = scanner.next();
 
-        Book book = new Book (title, author);
-        bookService.putBook(book);
+        Coffee coffee = new Coffee (title, typeOfBean);
+        coffeeService.putCoffee(coffee);
+        System.out.println("Спасибо большое за Ваш вклад!");
+
     }
 
     @Override
-    public void printBooks() {
+    public void printCoffee () {
         System.out.println("Уважаемый "+ client.getName());
-        System.out.println("Вот наши книги: ");
+        System.out.println("Все кофе которые вы заказали : "+ client.getCoffees());
 
     }
 }
