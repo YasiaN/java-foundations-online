@@ -40,8 +40,7 @@ public class CoffeeServiceImpl implements CoffeeService {
 
     @Override
     public boolean hasCoffee(String name) {
-        for (Coffee coffee : coffeesFromStore
-        ) {
+        for (Coffee coffee : coffeesFromStore) {
             if (coffee.getTitle().equals(name)) {
                 return true;
             }
@@ -52,8 +51,7 @@ public class CoffeeServiceImpl implements CoffeeService {
 
     @Override
     public void printCoffees() {
-        for (Coffee coffee : coffeesFromStore
-        ) {
+        for (Coffee coffee : coffeesFromStore) {
             System.out.println(coffee.getTitle() + " " + coffee.getTypeOfBean());
 
 
