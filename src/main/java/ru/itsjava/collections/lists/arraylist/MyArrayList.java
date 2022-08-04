@@ -34,8 +34,8 @@ public class MyArrayList {
                 return true;
             }
 
-        } return false;
-
+        }
+        return false;
     }
 
 
@@ -53,43 +53,128 @@ public class MyArrayList {
     }
 
     public boolean remove(Object o) {
-        return false;
+        int delIndex = -1;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] != null && array[i].equals(o)) {
+                delIndex = i;
+                break;
+            }
+        }
+        if (array.length - 1 - delIndex >= 0) {
+            System.arraycopy(array, delIndex + 1, array, delIndex, array.length - 1 - delIndex);
+        }
+        //смотрим, удалили ли мы элемент?
+        if (delIndex == -1) {
+            return false;
+        } else {
+            realSize--;
+            return true;
+        }
     }
 
-  public void clear() {
-    if (realSize!=0) {
-        realSize=0;
-        System.out.println("нет объектов в list");
-          }
-      }
+    public void clear() {
+        if (realSize != 0) {
+            realSize = 0;
+            System.out.println("нет объектов в list");
+        }
+    }
 
     public Object get(int index) {
-        return null;
+// Возвращает элемент, который расположен в указанной позиции списка.
+
+        checkIndex(index);
+        return array[index];
+
     }
 
     public Object set(int index, Object element) {
-        return null;
+//        Замена элемента в указанной позиции index
+//        на переданный element. Индекс также должен быть больше нуля и меньше индекса последнего элемента,
+//        иначе будет выброшено исключение IndexOutOfBoundsException.
+        checkIndex(index);
+        array[index] = element;
+
+        return element;
     }
 
     public void add(int index, Object element) {
 
+//        Добавляет элемент element в позицию index.
+//        При добавлении происходит сдвиг всех элементов справа от указанного индекса на 1 позицию вправо:
+
+        checkIndex(index);
+        int Count = 0;
+        Count++;
+        if ((realSize = array.length) == (array = this.array).length) {
+
+            System.arraycopy(array, index, array, index + 1, realSize - index);
+            array[index] = element;
+            realSize++;
+        }
     }
 
     public Object remove(int index) {
-        return null;
+        checkIndex(index);
+
+        Object resElement = array[index];
+        if (array.length - 1 - index >= 0) System.arraycopy(array, index + 1, array, index, array.length - 1 - index);
+        realSize--;
+        return resElement;
+    }
+
+
+    private void checkIndex(int index) {
+        if (!isCorrectIndex(index)) {
+            throw new ArrayIndexOutOfBoundsException("Некорректный индекс");
+        }
+    }
+
+    private boolean isCorrectIndex(int index) {
+        if ((index > -1) && (index < realSize)) {
+            return true;
+        }
+        return false;
     }
 
     public int indexOf(Object o) {
-        return 0;
+//        Метод возвращает индекс первого вхождения элемента в списке.
+//        Если элемента не существует в списке, метод вернет -1.
+return lastIndexOf (o);
     }
+
+
 
     public int lastIndexOf(Object o) {
-        return 0;
+//        Функционал метода похож на indexOf(), отличие в том, что
+//        возвращается индекс последнего элемента в списке.
+//
+//Если элемент не найден, также возвращает -1.
+
+        return lastIndexOfRange(o,0,realSize) ;
+    }
+    int lastIndexOfRange (Object o, int start, int end) {
+        Object [] es= array;
+        if (o==null) {
+            for (int i = end-1; i >=start ; i--) {
+                if (es [i]==null) {
+                return i;
+            }
+        }
+    } else {
+            for (int i = end-1; i >=start ; i--) {
+                if (o.equals(es[i])) {
+                    return i;
+                }
+            }
+        }
+        return -1;
     }
 
-    @Override
-    public String toString() {
-//        return "MyArrayList{" + Arrays.toString(array) + '}';
+
+
+
+       public String toString() {
+
         StringBuilder stringBuilder = new StringBuilder("MyArrayList{");
 
         for (int i = 0; i < realSize; i++) {
