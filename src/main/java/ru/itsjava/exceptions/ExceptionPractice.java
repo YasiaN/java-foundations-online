@@ -42,13 +42,6 @@ public class ExceptionPractice {
 //        }
 
         Person person1 = new Person ("anna", 50);
-        try {
-            System.out.println(person1.getAge());
-            if ((person1.getAge() < 0) || (person1.getAge() > 150)) {
-                throw new AgeNotValidException();
-            }
-        } catch (Exception ageNotValidException) {
-            ageNotValidException.printStackTrace();
-        }
+
     }
 }

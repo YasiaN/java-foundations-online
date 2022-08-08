@@ -12,6 +12,14 @@ public class Person {
     public Person(String name, int age) throws AgeNotValidException {
         this.name = name;
         this.age = age;
+        try {
+            System.out.println(age+ "age");
+            if ((age < 0) || (age > 150)) {
+                throw new AgeNotValidException();
+            }
+        } catch (Exception ageNotValidException) {
+            ageNotValidException.printStackTrace();
+        }
 
     }
 }
