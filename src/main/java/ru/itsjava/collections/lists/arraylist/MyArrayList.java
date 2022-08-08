@@ -136,32 +136,27 @@ public class MyArrayList {
         return false;
     }
 
-    public int indexOf(Object o) {
-//        Метод возвращает индекс первого вхождения элемента в списке.
-//        Если элемента не существует в списке, метод вернет -1.
-return lastIndexOf (o);
-    }
 
 
 
-    public int lastIndexOf(Object o) {
-//        Функционал метода похож на indexOf(), отличие в том, что
-//        возвращается индекс последнего элемента в списке.
+//        public int indexOf(Object o) {
+//        //        Метод возвращает индекс первого вхождения элемента в списке.
+////        Если элемента не существует в списке, метод вернет -1.
 //
-//Если элемент не найден, также возвращает -1.
+public int indexOf(Object o) {
+    return indexOfRange(o, 0, realSize);
+}
 
-        return lastIndexOfRange(o,0,realSize) ;
-    }
-    int lastIndexOfRange (Object o, int start, int end) {
-        Object [] es= array;
-        if (o==null) {
-            for (int i = end-1; i >=start ; i--) {
-                if (es [i]==null) {
-                return i;
+    int indexOfRange(Object o, int start, int end) {
+        Object[] es = array;
+        if (o == null) {
+            for (int i = start; i < end; i++) {
+                if (es[i] == null) {
+                    return i;
+                }
             }
-        }
-    } else {
-            for (int i = end-1; i >=start ; i--) {
+        } else {
+            for (int i = start; i < end; i++) {
                 if (o.equals(es[i])) {
                     return i;
                 }
@@ -172,8 +167,35 @@ return lastIndexOf (o);
 
 
 
+    public int lastIndexOf(Object o) {
+//        Функционал метода похож на indexOf(), отличие в том, что
+//        возвращается индекс последнего элемента в списке.
+//
+//Если элемент не найден, также возвращает -1.
 
-       public String toString() {
+        return lastIndexOfRange(o, 0, realSize);
+    }
+
+    int lastIndexOfRange(Object o, int start, int end) {
+        Object[] es = array;
+        if (o == null) {
+            for (int i = end - 1; i >= start; i--) {
+                if (es[i] == null) {
+                    return i;
+                }
+            }
+        } else {
+            for (int i = end - 1; i >= start; i--) {
+                if (o.equals(es[i])) {
+                    return i;
+                }
+            }
+        }
+        return -1;
+    }
+
+
+    public String toString() {
 
         StringBuilder stringBuilder = new StringBuilder("MyArrayList{");
 

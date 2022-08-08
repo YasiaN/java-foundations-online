@@ -81,7 +81,7 @@ public class MyArrayListPractice {
 
 //        ArrayList listTest =new ArrayList();
 //        listTest.add(1,"test");
-//        listTest.lastIndexOf()
+//        listTest.indexOf();
 
 
         MyArrayList listHomework = new MyArrayList();
@@ -89,12 +89,19 @@ public class MyArrayListPractice {
         listHomework.add("Number_2");
         listHomework.add("Number_3");
         listHomework.add("Number_4");
+        listHomework.add ("Number_1");
 
 //        System.out.println("listHomework = " + listHomework);
 //        listHomework.add(3,"Number_3new");
 //        System.out.println("listHomework = " + listHomework);
-        System.out.println("listHomework.lastIndexOf(listHomework) = " + listHomework.lastIndexOf(listHomework));
-        System.out.println("listHomework.lastIndexOfRange(listHomework,0,3) = " + listHomework.lastIndexOfRange(listHomework, 0, 3));
+//        System.out.println("listHomework.lastIndexOf(listHomework) = " + listHomework.lastIndexOf(listHomework));
+//        System.out.println("listHomework.lastIndexOfRange(listHomework,0,3) = " + listHomework.lastIndexOfRange(listHomework, 0, 3));
+
+        listHomework.add ("Number_1");
+        System.out.println("listHomework.toString() = " + listHomework.toString());
+        System.out.println("listHomework.indexOf(\"Number_1\") = " + listHomework.indexOf("Number_1"));
+        System.out.println("listHomework.indexOf(\"Number_4\") = " + listHomework.indexOf("Number_4"));
+        System.out.println("listHomework.lastIndexOf(\"Number_1\") = " + listHomework.lastIndexOf("Number_1"));
 
 
     }
