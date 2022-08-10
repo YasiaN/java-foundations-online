@@ -97,12 +97,15 @@ public class MyArrayListPractice {
 //        System.out.println("listHomework.lastIndexOf(listHomework) = " + listHomework.lastIndexOf(listHomework));
 //        System.out.println("listHomework.lastIndexOfRange(listHomework,0,3) = " + listHomework.lastIndexOfRange(listHomework, 0, 3));
 
-        listHomework.add ("Number_1");
-        System.out.println("listHomework.toString() = " + listHomework.toString());
-        System.out.println("listHomework.indexOf(\"Number_1\") = " + listHomework.indexOf("Number_1"));
-        System.out.println("listHomework.indexOf(\"Number_4\") = " + listHomework.indexOf("Number_4"));
-        System.out.println("listHomework.lastIndexOf(\"Number_1\") = " + listHomework.lastIndexOf("Number_1"));
+//        listHomework.add ("Number_1");
+//        System.out.println("listHomework.toString() = " + listHomework.toString());
+//        System.out.println("listHomework.indexOf(\"Number_1\") = " + listHomework.indexOf("Number_1"));
+//        System.out.println("listHomework.indexOf(\"Number_4\") = " + listHomework.indexOf("Number_4"));
+//        System.out.println("listHomework.lastIndexOf(\"Number_1\") = " + listHomework.lastIndexOf("Number_1"));
 
+       System.out.println("listHomework.remove(2) = " + listHomework.remove(2));
 
+        listHomework.add(2,"Number_3");
+        listHomework.toString();
     }
 }

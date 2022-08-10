@@ -74,6 +74,9 @@ public class MyArrayList {
 
     public void clear() {
         if (realSize != 0) {
+            for (int i = 0; i < array.length; i++) {
+                array[i]=null;
+            }
             realSize = 0;
             System.out.println("нет объектов в list");
         }
@@ -114,7 +117,6 @@ public class MyArrayList {
     }
 
     public Object remove(int index) {
-        checkIndex(index);
 
         Object resElement = array[index];
         if (array.length - 1 - index >= 0) System.arraycopy(array, index + 1, array, index, array.length - 1 - index);
