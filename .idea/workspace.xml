@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e880a046-0951-414f-8edd-7f418f47d168" name="Changes" comment="Added classwork and homework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/collections/lists/arraylist/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/collections/lists/arraylist/MyArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/collections/lists/arraylist/MyArrayListPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/collections/lists/arraylist/MyArrayListPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/collections/lists/arraylist/MyArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/collections/lists/arraylist/MyArrayList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/collections/lists/arraylist/MyArrayListPractice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/collections/lists/arraylist/MyArrayListPractice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/exceptions/ExceptionPractice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/exceptions/ExceptionPractice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/exceptions/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/exceptions/Person.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -48,10 +51,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
@@ -60,52 +65,19 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.itsjava.comparable" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.itsjava.collections.lists.arraylist" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyArrayListPractice">
-    <configuration name="ArrayListPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.ArrayListPractice" />
-      <module name="java-foundations-online" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.itsjava.collections.lists.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayPractice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.ArrayPractice2" />
-      <module name="java-foundations-online" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.itsjava.collections.lists.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExceptionPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.exceptions.ExceptionPractice" />
-      <module name="java-foundations-online" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.itsjava.exceptions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MyArrayListTest.testToString">
     <configuration name="MyArrayListPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.arraylist.MyArrayListPractice" />
       <module name="java-foundations-online" />
@@ -119,26 +91,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.strings.StringPractice" />
+    <configuration name="MyArrayListTest.indexOfRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-foundations-online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.itsjava.strings.*" />
+          <option name="PATTERN" value="ru.itsjava.collections.lists.arraylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="ru.itsjava.collections.lists.arraylist" />
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.arraylist.MyArrayListTest" />
+      <option name="METHOD_NAME" value="indexOfRange" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyArrayListTest.lastIndexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-foundations-online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.itsjava.collections.lists.arraylist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.itsjava.collections.lists.arraylist" />
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.arraylist.MyArrayListTest" />
+      <option name="METHOD_NAME" value="lastIndexOf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyArrayListTest.lastIndexOfRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-foundations-online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.itsjava.collections.lists.arraylist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.itsjava.collections.lists.arraylist" />
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.arraylist.MyArrayListTest" />
+      <option name="METHOD_NAME" value="lastIndexOfRange" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyArrayListTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-foundations-online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.itsjava.collections.lists.arraylist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.itsjava.collections.lists.arraylist" />
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.arraylist.MyArrayListTest" />
+      <option name="METHOD_NAME" value="testToString" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyArrayListTest.testToString" />
         <item itemvalue="Application.MyArrayListPractice" />
-        <item itemvalue="Application.ArrayListPractice" />
-        <item itemvalue="Application.ArrayPractice2" />
-        <item itemvalue="Application.ExceptionPractice" />
-        <item itemvalue="Application.StringPractice" />
+        <item itemvalue="JUnit.MyArrayListTest.lastIndexOfRange" />
+        <item itemvalue="JUnit.MyArrayListTest.lastIndexOf" />
+        <item itemvalue="JUnit.MyArrayListTest.indexOfRange" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +300,49 @@
       <option name="project" value="LOCAL" />
       <updated>1658860138927</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added classwork and homework">
+      <created>1659631532485</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1659631532485</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added classwork and homework">
+      <created>1659631551253</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1659631551253</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added classwork and homework">
+      <created>1659965896339</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1659965896339</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added classwork and homework">
+      <created>1659980352303</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1659980352303</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Added classwork and homework">
+      <created>1660140724685</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1660140724685</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added classwork and homework">
+      <created>1660141972326</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1660141972326</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
