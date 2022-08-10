@@ -105,7 +105,7 @@ public class MyArrayListPractice {
 
        System.out.println("listHomework.remove(2) = " + listHomework.remove(2));
 
-        listHomework.add(2,"Number_3");
-        listHomework.toString();
+//        listHomework.add(2,"Number_3");
+        System.out.println("listHomework.toString() = " + listHomework.toString());
     }
 }
