@@ -73,7 +73,7 @@
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyLinkedListPractice">
+  <component name="RunManager" selected="Application.SetPractice">
     <configuration name="MyArrayListPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.arraylist.MyArrayListPractice" />
       <module name="java-foundations-online" />
@@ -100,18 +100,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.lastIndexOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SetPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.sets.SetPractice" />
       <module name="java-foundations-online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.itsjava.collections.lists.arraylist.*" />
+          <option name="PATTERN" value="ru.itsjava.collections.lists.sets.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.itsjava.collections.lists.arraylist" />
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.arraylist.MyArrayListTest" />
-      <option name="METHOD_NAME" value="lastIndexOf" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SetPractice" />
         <item itemvalue="Application.MyLinkedListPractice" />
         <item itemvalue="JUnit.MyArrayListTest.testToString" />
         <item itemvalue="Application.MyArrayListPractice" />
         <item itemvalue="JUnit.MyArrayListTest.lastIndexOfRange" />
-        <item itemvalue="JUnit.MyArrayListTest.lastIndexOf" />
       </list>
     </recent_temporary>
   </component>
@@ -349,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660142386579</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added classwork and homework">
+      <created>1660570970954</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1660570970954</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
