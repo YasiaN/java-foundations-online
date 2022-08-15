@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e880a046-0951-414f-8edd-7f418f47d168" name="Changes" comment="Added classwork and homework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/collections/lists/arraylist/MyArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/collections/lists/arraylist/MyArrayList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/collections/lists/arraylist/MyArrayListPractice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/collections/lists/arraylist/MyArrayListPractice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/exceptions/ExceptionPractice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/exceptions/ExceptionPractice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/exceptions/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/exceptions/Person.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -77,7 +73,7 @@
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyArrayListTest.testToString">
+  <component name="RunManager" selected="Application.MyLinkedListPractice">
     <configuration name="MyArrayListPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.arraylist.MyArrayListPractice" />
       <module name="java-foundations-online" />
@@ -91,18 +87,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.indexOfRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyLinkedListPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.linkedlist.MyLinkedListPractice" />
       <module name="java-foundations-online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.itsjava.collections.lists.arraylist.*" />
+          <option name="PATTERN" value="ru.itsjava.collections.lists.linkedlist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.itsjava.collections.lists.arraylist" />
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.arraylist.MyArrayListTest" />
-      <option name="METHOD_NAME" value="indexOfRange" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyLinkedListPractice" />
         <item itemvalue="JUnit.MyArrayListTest.testToString" />
         <item itemvalue="Application.MyArrayListPractice" />
         <item itemvalue="JUnit.MyArrayListTest.lastIndexOfRange" />
         <item itemvalue="JUnit.MyArrayListTest.lastIndexOf" />
-        <item itemvalue="JUnit.MyArrayListTest.indexOfRange" />
       </list>
     </recent_temporary>
   </component>
@@ -342,7 +335,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660141972326</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added classwork and homework">
+      <created>1660142277393</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1660142277393</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added classwork and homework">
+      <created>1660142386579</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1660142386579</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
