@@ -67,13 +67,29 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ru.itsjava.collections.lists.arraylist" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.itsjava.collections.lists.maps" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.SetPractice">
+  <component name="RunManager" selected="Application.MapPractice">
+    <configuration name="MapPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.maps.MapPractice" />
+      <module name="java-foundations-online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.itsjava.collections.lists.maps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyArrayListPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.arraylist.MyArrayListPractice" />
       <module name="java-foundations-online" />
@@ -113,22 +129,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.lastIndexOfRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-foundations-online" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.itsjava.collections.lists.arraylist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.itsjava.collections.lists.arraylist" />
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.arraylist.MyArrayListTest" />
-      <option name="METHOD_NAME" value="lastIndexOfRange" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyArrayListTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-foundations-online" />
       <extension name="coverage">
@@ -147,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MapPractice" />
         <item itemvalue="Application.SetPractice" />
         <item itemvalue="Application.MyLinkedListPractice" />
         <item itemvalue="JUnit.MyArrayListTest.testToString" />
         <item itemvalue="Application.MyArrayListPractice" />
-        <item itemvalue="JUnit.MyArrayListTest.lastIndexOfRange" />
       </list>
     </recent_temporary>
   </component>
@@ -353,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660570970954</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Added classwork and homework">
+      <created>1660575295526</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1660575295526</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
