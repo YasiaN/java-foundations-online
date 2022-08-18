@@ -7,6 +7,7 @@
     <list default="true" id="e880a046-0951-414f-8edd-7f418f47d168" name="Changes" comment="Added classwork and homework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/collections/lists/maps/MapPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/collections/lists/maps/MapPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/collections/lists/maps/MapPractice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/collections/lists/maps/MapPractice.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,12 +79,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.MapPractice">
-    <configuration name="MapPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.maps.MapPractice" />
+    <configuration name="IteratorPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.iterators.IteratorPractice" />
       <module name="java-foundations-online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.itsjava.collections.lists.maps.*" />
+          <option name="PATTERN" value="ru.itsjava.collections.lists.iterators.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.arraylist.MyArrayListPractice" />
+    <configuration name="MapPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.maps.MapPractice" />
       <module name="java-foundations-online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.itsjava.collections.lists.arraylist.*" />
+          <option name="PATTERN" value="ru.itsjava.collections.lists.maps.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,10 +150,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MapPractice" />
+        <item itemvalue="Application.IteratorPractice" />
         <item itemvalue="Application.SetPractice" />
         <item itemvalue="Application.MyLinkedListPractice" />
         <item itemvalue="JUnit.MyArrayListTest.testToString" />
-        <item itemvalue="Application.MyArrayListPractice" />
       </list>
     </recent_temporary>
   </component>
@@ -368,7 +369,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660672157954</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Added classwork and homework">
+      <created>1660739646549</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1660739646549</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Added classwork and homework">
+      <created>1660739663688</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1660739663688</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
