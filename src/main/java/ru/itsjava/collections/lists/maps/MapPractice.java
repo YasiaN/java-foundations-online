@@ -1,10 +1,11 @@
 package ru.itsjava.collections.lists.maps;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
-public class MapPractice {
-    public static void main(String[] args) {
+//public class MapPractice {
+//    public static void main(String[] args) {
 //        Map<Man,String> men = new HashMap<>();
 //        Man ivanov = new Man ("Иванов");
 //        Man sidorov = new Man ("Сидоров");
@@ -231,32 +232,32 @@ public class MapPractice {
 //        }
 //        System.out.println("newFruitMap = " + newFruitMap);
 //        10. Найти средний вес всех фруктов.
-        Map<String, Fruit> fruits3 = new HashMap<>();
-        Fruit apple = new Fruit("apple", 2.2);
-        Fruit watermelon1 = new Fruit("арбуз", 2.2);
-        Fruit watermelon2 = new Fruit("Арбуз", 2.2);
-        Fruit watermelon3 = new Fruit("АРбУз", 2.2);
-        Fruit melon = new Fruit("Дыня", 1.2);
-
-        fruits3.put("Ivanov", watermelon1);
-        fruits3.put("Javov", watermelon2);
-        fruits3.put("Sidorov", watermelon3);
-        fruits3.put("Petrov", apple);
-        fruits3.put("Klimov", melon);
-
-
-        double countSummWeight=0;
-        for (Fruit valueFruit : fruits3.values()) {
-            valueFruit.getWeight();
-            double countSummWeight1=valueFruit.getWeight();
-            countSummWeight+=countSummWeight1;
-        }
-        System.out.println(countSummWeight);
-
-    }
-
-
-}
+//        Map<String, Fruit> fruits3 = new HashSet<>();
+//        Fruit apple = new Fruit("apple", 2.2);
+//        Fruit watermelon1 = new Fruit("арбуз", 2.2);
+//        Fruit watermelon2 = new Fruit("Арбуз", 2.2);
+//        Fruit watermelon3 = new Fruit("АРбУз", 2.2);
+//        Fruit melon = new Fruit("Дыня", 1.2);
+//
+//        fruits3.put("Ivanov", watermelon1);
+//        fruits3.put("Javov", watermelon2);
+//        fruits3.put("Sidorov", watermelon3);
+//        fruits3.put("Petrov", apple);
+//        fruits3.put("Klimov", melon);
+//
+//
+//        double countSummWeight=0;
+//        for (Fruit valueFruit : fruits3.values()) {
+//            valueFruit.getWeight();
+//            double countSummWeight1=valueFruit.getWeight();
+//            countSummWeight+=countSummWeight1;
+//        }
+//        System.out.println(countSummWeight);
+//
+//    }
+//
+//
+//}
 //        for (Map.Entry<String, Fruit> pair: fruits3.entrySet()) {
 //            double countAverageWeight=0;
 //            double weightFruits3=pair.getValue().getWeight();
