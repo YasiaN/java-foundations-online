@@ -41,6 +41,7 @@ public class SerializationPractice {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        System.out.println("yasia после серриализации= " + yasia);
 
 
 //
