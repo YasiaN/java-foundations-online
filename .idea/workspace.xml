@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e880a046-0951-414f-8edd-7f418f47d168" name="Changes" comment="Added classwork and homework">
-      <change afterPath="$PROJECT_DIR$/rest-assured-demo-bo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest-assured-demo-bo/src/test/java/ru/buttonone/numbers/NumbersTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/iostreams/SerializationPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/iostreams/SerializationPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/iostreams/SerializationPractice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/iostreams/SerializationPractice.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,26 +79,13 @@
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.PropertiesPractice">
+  <component name="RunManager" selected="Application.ThreadPractice">
     <configuration name="IOStreamsPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.itsjava.iostreams.IOStreamsPractice" />
       <module name="java-foundations-online" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.itsjava.iostreams.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IteratorPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.iterators.IteratorPractice" />
-      <module name="java-foundations-online" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.itsjava.collections.lists.iterators.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,13 +132,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThreadPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.threads.ThreadPractice" />
+      <module name="java-foundations-online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.itsjava.threads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreadPractice" />
         <item itemvalue="Application.PropertiesPractice" />
         <item itemvalue="Application.SerializationPractice" />
         <item itemvalue="Application.IOStreamsPractice" />
         <item itemvalue="Application.MapPractice" />
-        <item itemvalue="Application.IteratorPractice" />
       </list>
     </recent_temporary>
   </component>
@@ -406,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661450322101</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Added classwork and homework">
+      <created>1661777648049</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1661777648049</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
