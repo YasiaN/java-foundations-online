@@ -37,21 +37,43 @@ public class ThreadPractice {
 //             B     B     B    B     B     B
 
 
-        PrinterThread printerThreadA = new PrinterThread("A",2000L);
+//        PrinterThread printerThreadA = new PrinterThread("A",2000L);
 //        PrinterThread printerThreadB = new PrinterThread("B",3000L);
+//
+//        PrinterRunnable printerRunnable = new PrinterRunnable("B", 3000L);
+//
+//        Thread threadB=new Thread(printerRunnable);
+//
+//        System.out.println("start");
+//        printerThreadA.start();
+//        threadB.start();
+//
+//        System.out.println("end");
 
-        PrinterRunnable printerRunnable = new PrinterRunnable("B", 3000L);
+// 1. Создать 2 потока разными способами (Унаследоваться от Runnable и от класса Thread) и запустить их
 
-        Thread threadB=new Thread(printerRunnable);
+//        PrinterThread2 printerThreadC = new PrinterThread2("C", 1000L);
+//        PrinterThread2 printerThreadD = new PrinterThread2("D", 2000L);
+//
+//        PrinterRunnable2 printerRunnable2 = new PrinterRunnable2("D", 3000L);
+//
+//        Thread threadB = new Thread(printerRunnable2);
+//
+//        System.out.println("start");
+//        threadB.start();
+//
+//
+//        System.out.println("end");
 
-        System.out.println("start");
-        printerThreadA.start();
-        threadB.start();
-
-        System.out.println("end");
 
 
+//        Написать программу, которая выводит любое сообщение раз в 5 секунд
+        for (int i = 0; i < 5; i++) {
+            Thread.sleep(5000L);
+            System.out.println("Всё получится, ты молодец!");
 
-
+        }
     }
 }
+
+
