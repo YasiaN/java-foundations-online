@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e880a046-0951-414f-8edd-7f418f47d168" name="Changes" comment="Added classwork and homework" />
+    <list default="true" id="e880a046-0951-414f-8edd-7f418f47d168" name="Changes" comment="Added classwork and homework">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/threads/PrinterRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/threads/lecture1/PrinterRunnable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/threads/PrinterRunnable2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/threads/lecture1/PrinterRunnable2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/threads/PrinterThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/threads/lecture1/PrinterThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/threads/PrinterThread2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/threads/lecture1/PrinterThread2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/threads/ThreadPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/threads/lecture1/ThreadPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/threads/PrinterRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/threads/PrinterRunnable2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/threads/PrinterThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/threads/PrinterThread2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/threads/ThreadPractice.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,26 +89,13 @@
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThreadPractice">
+  <component name="RunManager" selected="Application.ThreadPractice (1)">
     <configuration name="IOStreamsPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.itsjava.iostreams.IOStreamsPractice" />
       <module name="java-foundations-online" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.itsjava.iostreams.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.collections.lists.maps.MapPractice" />
-      <module name="java-foundations-online" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.itsjava.collections.lists.maps.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +129,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.threads.ThreadPractice" />
+    <configuration name="ThreadPractice (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.threads.lecture2.ThreadPractice" />
       <module name="java-foundations-online" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.itsjava.threads.*" />
+          <option name="PATTERN" value="ru.itsjava.threads.lecture2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.threads.lecture1.ThreadPractice" />
+      <module name="java-foundations-online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.itsjava.threads.lecture1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ThreadPractice (1)" />
         <item itemvalue="Application.ThreadPractice" />
         <item itemvalue="Application.PropertiesPractice" />
         <item itemvalue="Application.SerializationPractice" />
         <item itemvalue="Application.IOStreamsPractice" />
-        <item itemvalue="Application.MapPractice" />
       </list>
     </recent_temporary>
   </component>
@@ -421,7 +433,28 @@
       <option name="project" value="LOCAL" />
       <updated>1661954047269</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Added classwork and homework">
+      <created>1661954071221</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1661954071221</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Added classwork and homework">
+      <created>1661954116833</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1661954116833</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Added classwork and homework">
+      <created>1661954156338</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1661954156338</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

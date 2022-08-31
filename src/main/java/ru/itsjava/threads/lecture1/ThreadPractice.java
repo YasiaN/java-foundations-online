@@ -1,4 +1,4 @@
-package ru.itsjava.threads;
+package ru.itsjava.threads.lecture1;
 
 public class ThreadPractice {
     public static void main(String[] args) throws InterruptedException {
