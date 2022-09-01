@@ -55,20 +55,22 @@ public class ThreadPractice {
 //        2. Создать поток реализовав интерфейс Runnable (с помощью лямбда выражения)
 //        Который печатает раз в 4 секунды "Привет я проснулся после 4 секунд" И сделать его демоном.
 
-        Runnable runnable=()-> {
-            for (int i = 0; i < 5; i++) {
-                System.out.println("Привет я проснулся после 4 секунд");
-                try {
-                    Thread.sleep(4000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        };
-        Thread thread = new Thread(runnable);
-        thread.setDaemon(true);
-        thread.run();
+//        Runnable runnable=()-> {
+//            for (int i = 0; i < 5; i++) {
+//                System.out.println("Привет я проснулся после 4 секунд");
+//                try {
+//                    Thread.sleep(4000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        };
+//        Thread thread = new Thread(runnable);
+//        thread.setDaemon(true);
+//        thread.run();
 
-    }
+        }
+
+
 
 }
