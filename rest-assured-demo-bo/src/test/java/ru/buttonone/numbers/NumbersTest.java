@@ -66,7 +66,7 @@ public class NumbersTest {
                 .contentType(ContentType.TEXT)
                 .log().all()
                 .statusCode(200);
-        .spec(responseSpecification);
+//        .spec(responseSpecification);
     }
 
     @DisplayName("Проверяем, что при вводе числа выдаёт ответ и ответ релевантен ")

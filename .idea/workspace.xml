@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e880a046-0951-414f-8edd-7f418f47d168" name="Changes" comment="Added classwork and homework">
+      <change afterPath="$PROJECT_DIR$/rest-assured-demo-bo/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-assured-demo-bo/src/main/java/ru/buttonone/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-assured-demo-bo/src/test/java/ru/buttonone/lotr/LotrTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsjava/threads/lecture2/ThreadPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsjava/threads/lecture2/ThreadPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/itsjava/threads/lecture2/ThreadPractice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/itsjava/threads/lecture2/ThreadPractice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-assured-demo-bo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo-bo/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-assured-demo-bo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo-bo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-assured-demo-bo/src/test/java/ru/buttonone/numbers/NumbersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo-bo/src/test/java/ru/buttonone/numbers/NumbersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-assured-demo-bo/target/test-classes/ru/buttonone/numbers/NumbersTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/rest-assured-demo-bo/target/test-classes/ru/buttonone/numbers/NumbersTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +25,7 @@
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -81,7 +87,20 @@
       <command value="mvn dependency:tree" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThreadPractice2">
+  <component name="RunManager" selected="Application.EnumPractice">
+    <configuration name="EnumPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.enums.EnumPractice" />
+      <module name="java-foundations-online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.itsjava.enums.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PropertiesPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.itsjava.iostreams.PropertiesPractice" />
       <module name="java-foundations-online" />
@@ -121,19 +140,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.itsjava.threads.lecture2.ThreadPractice" />
-      <module name="java-foundations-online" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.itsjava.threads.lecture3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ThreadPractice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.itsjava.threads.lecture3.ThreadPractice2" />
       <module name="java-foundations-online" />
@@ -147,10 +153,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThreadPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.itsjava.threads.lecture2.ThreadPractice" />
+      <module name="java-foundations-online" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.itsjava.threads.lecture3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EnumPractice" />
         <item itemvalue="Application.ThreadPractice2" />
-        <item itemvalue="Application.ThreadPractice (1)" />
         <item itemvalue="Application.ThreadPractice" />
         <item itemvalue="Application.PropertiesPractice" />
         <item itemvalue="Application.SerializationPractice" />
@@ -460,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661968413481</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Added classwork and homework">
+      <created>1662038853675</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1662038853675</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
