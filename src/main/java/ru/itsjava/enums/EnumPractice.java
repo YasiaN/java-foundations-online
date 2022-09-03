@@ -1,7 +1,7 @@
-package ru.itsjava.enums;
-
-public class EnumPractice {
-    public static void main(String[] args) {
+//package ru.itsjava.enums;
+//
+//public class EnumPractice {
+//    public static void main(String[] args) {
 //        System.out.println("Season.WINTER = " + Season.WINTER);
 //
 //        System.out.println("Season.valueOf(\"WINTER\") = " + Season.valueOf("WINTER"));

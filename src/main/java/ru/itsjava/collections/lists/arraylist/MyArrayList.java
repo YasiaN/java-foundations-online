@@ -75,7 +75,7 @@ public class MyArrayList {
     public void clear() {
         if (realSize != 0) {
             for (int i = 0; i < array.length; i++) {
-                array[i]=null;
+                array[i] = null;
             }
             realSize = 0;
             System.out.println("нет объектов в list");
@@ -108,16 +108,21 @@ public class MyArrayList {
         checkIndex(index);
         int Count = 0;
         Count++;
-        if ((realSize = array.length) == (array = this.array).length) {
+        if (realSize < array.length) {
 
             System.arraycopy(array, index, array, index + 1, realSize - index);
             array[index] = element;
             realSize++;
         }
+        if (realSize == array.length) {
+            array[index] = array[realSize];
+            realSize++;
+
+        }
     }
 
     public Object remove(int index) {
-
+        checkIndex(index);
         Object resElement = array[index];
         if (array.length - 1 - index >= 0) System.arraycopy(array, index + 1, array, index, array.length - 1 - index);
         realSize--;
@@ -139,15 +144,13 @@ public class MyArrayList {
     }
 
 
-
-
-//        public int indexOf(Object o) {
+    //        public int indexOf(Object o) {
 //        //        Метод возвращает индекс первого вхождения элемента в списке.
 ////        Если элемента не существует в списке, метод вернет -1.
 //
-public int indexOf(Object o) {
-    return indexOfRange(o, 0, realSize);
-}
+    public int indexOf(Object o) {
+        return indexOfRange(o, 0, realSize);
+    }
 
     int indexOfRange(Object o, int start, int end) {
         Object[] es = array;
@@ -166,7 +169,6 @@ public int indexOf(Object o) {
         }
         return -1;
     }
-
 
 
     public int lastIndexOf(Object o) {

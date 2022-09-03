@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-//public class MapPractice {
-//    public static void main(String[] args) {
+public class MapPractice {
+    public static void main(String[] args) {
 //        Map<Man,String> men = new HashMap<>();
 //        Man ivanov = new Man ("Иванов");
 //        Man sidorov = new Man ("Сидоров");
@@ -42,22 +42,28 @@ import java.util.Map;
 
 //        Создать класс Fruit с полями: наименование и вес
 //0. Создать экземпляр HashMap (Ключ Имя покупателя, Значение Фрукт)
-//        Map<String, Fruit> soldFruits = new HashMap<>();
+        Map<String, Fruit> soldFruits = new HashMap<>();
 
 // 1.Вставка элементов:
 //а). Добавить 5 фруктов
-//
-//        Fruit apple = new Fruit("apple", 2.5);
-//        Fruit peach = new Fruit("peach", 3.5);
-//        Fruit ananas = new Fruit("ananas", 5.1);
-//        Fruit banana = new Fruit("banana", 2.5);
-//        Fruit pear = new Fruit("pear", 0.3);
-//
-//        soldFruits.put("Ivanov", apple);
-//        soldFruits.put("Sidorov", peach);
-//        soldFruits.put("Petrov", ananas);
-//        soldFruits.put("Javov", banana);
-//        soldFruits.put("Rozin", pear);
+
+        Fruit apple = new Fruit("apple", 2.5);
+        Fruit peach = new Fruit("peach", 3.5);
+        Fruit ananas = new Fruit("ananas", 5.1);
+        Fruit banana = new Fruit("banana", 2.5);
+        Fruit pear = new Fruit("pear", 0.3);
+
+        soldFruits.put("Ivanov", apple);
+        soldFruits.put("Sidorov", peach);
+        soldFruits.put("Petrov", ananas);
+        soldFruits.put("Javov", banana);
+        soldFruits.put("Rozin", pear);
+// проверить содержится ли фрукт в множестве фруктов?
+        System.out.println("soldFruits.containsKey(\"apple\") = " + soldFruits.containsKey("apple"));
+
+    }
+}
+
 //б). В новый экземпляр HashMap добавим старую карту
 
 //        Map<String, Fruit> fruit2 = new HashMap<>();
