@@ -60,47 +60,51 @@ public class MapPractice {
         soldFruits.put("Rozin", pear);
 // проверить содержится ли фрукт в множестве фруктов?
         System.out.println("soldFruits.containsKey(\"apple\") = " + soldFruits.containsKey("apple"));
-
-    }
-}
+//
+//    }
+//}
 
 //б). В новый экземпляр HashMap добавим старую карту
 
-//        Map<String, Fruit> fruit2 = new HashMap<>();
-//        Fruit nectarines = new Fruit("nectarines", 0.4);
-//        fruit2.put("Lebedeva", nectarines);
-//        System.out.println("fruit2 = " + fruit2);
-//
-//        fruit2.putAll(soldFruits);
-//        System.out.println("fruit2 = " + fruit2);
-//
-//// 2. Получение элемента по ключу (Получить любой фрукт по покупателю)
-//
-//        System.out.println("fruit2.get(\"Rozin\") = " + fruit2.get("Rozin"));
-//
-////        3. Удаление элемента
-////а). Удалить любой фрукт
-//
-//        System.out.println("fruit2.remove(\"Rozin\") = " + fruit2.remove("Rozin"));
-//        System.out.println("fruit2 = " + fruit2);
+        Map<String, Fruit> fruit2 = new HashMap<>();
+        Fruit nectarines = new Fruit("nectarines", 0.4);
+        fruit2.put("Lebedeva", nectarines);
+        System.out.println("fruit2 = " + fruit2);
+
+        fruit2.putAll(soldFruits);
+        System.out.println("fruit2 = " + fruit2);
+
+// 2. Получение элемента по ключу (Получить любой фрукт по покупателю)
+
+        System.out.println("fruit2.get(\"Rozin\") = " + fruit2.get("Rozin"));
+
+//        3. Удаление элемента
+//а). Удалить любой фрукт
+
+        System.out.println("fruit2.remove(\"Rozin\") = " + fruit2.remove("Rozin"));
+        System.out.println("fruit2 = " + fruit2);
 
 //        4. Проверка на наличие ключ и значение (Есть ли покупатель с таким фруктом)
 
 //        Fruit coconut = new Fruit("coconut", 3.0);
 //        for (Map.Entry<String, Fruit> pair : fruit2.entrySet()) {
-//            if ((pair.getKey().equals( "coconut")) && ((pair.getValue()).equals(3.0))) {
+//            if ((pair.getKey().equals("coconut")) && ((pair.getValue()).equals(3.0))) {
 //                System.out.println("Покупатель с фрутом " + coconut.getName() + "есть!");
 //                break;
-//            } else System.out.println("Покупатель с фруктом " + coconut.getName() + " отсутствует");
+//            } else {
+//                System.out.println("Покупатель с фруктом " + coconut.getName() + " отсутствует")
+//            } ;
 //            break;
 //        }
+//    }
+//}
 
 // 5. Вывод Map на экран:
 //a) Вывести все ключи (всех покупателей)
 
 //        for (String keyFruit : fruit2.keySet()) {
-//           System.out.println(keyFruit+ ":" + fruit2.get(keyFruit));
-//
+//            System.out.println(keyFruit + ":" + fruit2.get(keyFruit));
+//        }
 
 //        б) Вывести все значения (все фрукты)
 //        System.out.println("fruit2 = " + fruit2.values());
