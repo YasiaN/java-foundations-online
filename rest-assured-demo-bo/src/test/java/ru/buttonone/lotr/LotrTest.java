@@ -17,27 +17,27 @@ public class LotrTest {
 
     public static final String LOTR_API_URL = "https://the-one-api.dev/v2";
 
-    @DisplayName("корректно получать книги")
-    @Test
-    public void shouldHaveCorrectGetBooksTest() {
-        ValidatableResponse validatableResponse = given()
-                .baseUri(LOTR_API_URL)
-                .when()
-                .get("/book")
-                .then();
-//                .log().all()
-//                .statusCode(200);
-
-        List<Book> bookList = validatableResponse.extract().body().jsonPath().getList("docs", Book.class);
-        System.out.println("bookList = " + bookList);
-//        Assertions.assertAll(
-//                () -> assertTrue(bookList.stream().anyMatch(b -> b.getName().equals("The Fellowship Of The Ring"))
-//                ));
-
-        MatcherAssert.assertThat(bookList, Matchers.containsInAnyOrder(new Book("The Fellowship Of The Ring") ,
-                new Book ("The Two Towers"),
-                new Book ("The Return Of The King"),
-
-
-    }
+//    @DisplayName("корректно получать книги")
+//    @Test
+//    public void shouldHaveCorrectGetBooksTest() {
+//        ValidatableResponse validatableResponse = given()
+//                .baseUri(LOTR_API_URL)
+//                .when()
+//                .get("/book")
+//                .then();
+////                .log().all()
+////                .statusCode(200);
+//
+//        List<Book> bookList = validatableResponse.extract().body().jsonPath().getList("docs", Book.class);
+//        System.out.println("bookList = " + bookList);
+////        Assertions.assertAll(
+////                () -> assertTrue(bookList.stream().anyMatch(b -> b.getName().equals("The Fellowship Of The Ring"))
+////                ));
+//
+//        MatcherAssert.assertThat(bookList, Matchers.containsInAnyOrder(new Book("The Fellowship Of The Ring") ,
+//                new Book ("The Two Towers"),
+//                new Book ("The Return Of The King"),
+//
+//
+//    }
 }

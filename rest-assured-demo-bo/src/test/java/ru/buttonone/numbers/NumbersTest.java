@@ -5,18 +5,21 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
+import io.restassured.http.Header;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import ru.buttonone.numbers.specification.NumbersSpecifications;
 
 import static io.restassured.RestAssured.given;
 
 public class NumbersTest {
 
-    public static final String NUMBERS_URL = "http://numbersapi.com/";
+    public static final String NUMBERS_URL = "http://numbersapi.com";
+    public static final String ID_PATH = "/{id}";
 
 
     @Test
@@ -28,34 +31,37 @@ public class NumbersTest {
 
 //        Assertions.assertEquals(200,response.statusCode());
 
-        RequestSpecification requestSpecification =
-                new RequestSpecBuilder()
-                        .addHeader("Accept-Language", "ru")
-                        .setBaseUri(NUMBERS_URL)
-                        .build();
+//        RequestSpecification requestSpecification =
+//                new RequestSpecBuilder()
+//                        .addHeader("Accept-Language", "ru")
+//                        .setBaseUri(NUMBERS_URL)
+//                        .build();
+
+//        ResponseSpecification responseSpecification =
+//                new ResponseSpecBuilder()
+//                        .log(LogDetail.ALL)
+//                        .expectStatusCode(200)
+//                        .build();
 
         given()
-                .spec(requestSpecification)
+                .spec(new NumbersSpecifications().defaultRequestSpecification())
                 .when()
                 .get()
                 .then()
-                .log().all()
-                .statusCode(200);
+//                .log().all()
+//                .statusCode(200);
+                .spec(new NumbersSpecifications().withoutExpectContentTypeResponseSpecification());
 
-        ResponseSpecification responseSpecification =
-                new ResponseSpecBuilder()
-                        .log(LogDetail.ALL)
-                        .expectStatusCode(200)
-                        .build();
+
 
         given()
-                .spec(requestSpecification)
+                .spec(new NumbersSpecifications().defaultRequestSpecification())
                 .when()
                 .get()
                 .then()
-                .log().all()
-                .statusCode(200);
-
+//                .log().all()
+//                .statusCode(200);
+        .spec(new NumbersSpecifications().withoutExpectContentTypeResponseSpecification());
 
         given()
                 .baseUri(NUMBERS_URL)
@@ -63,10 +69,11 @@ public class NumbersTest {
                 .param("id", 2)
                 .get("/2")
                 .then()
-                .contentType(ContentType.TEXT)
-                .log().all()
-                .statusCode(200);
-//        .spec(responseSpecification);
+//                .contentType(ContentType.TEXT)
+//                .log().all()
+//                .statusCode(200);
+                .spec(new NumbersSpecifications().defaultResponseSpecification());
+
     }
 
     @DisplayName("Проверяем, что при вводе числа выдаёт ответ и ответ релевантен ")
@@ -77,30 +84,38 @@ public class NumbersTest {
 //         Response response = RestAssured.given().get("http://numbersapi.com/8/math");
 //        response.prettyPrint();
 
-        given()
-                .baseUri("http://numbersapi.com/8")
+        RestAssured
+                .given()
+//                .header(new Header("language", "en"))
+//                .baseUri(NUMBERS_URL)
+                .spec (new NumbersSpecifications().defaultRequestSpecification())
                 .when()
-                .get("/math")
+                .get("8/math")
                 .then()
-                .log().all()
-                .statusCode(200);
+//                .log().all()
+//                .contentType(ContentType.TEXT)
+//                .statusCode(200);
+                .spec(new NumbersSpecifications().defaultResponseSpecification());
     }
 
     @DisplayName("Проверяем, что при вводе даты выдаёт ответ и ответ релевантен")
     @Test
     public void shouldHaveCorrectDate27Aug() {
 
-        given()
-                .baseUri("http://numbersapi.com/")
+        RestAssured
+                .given()
+//                .header(new Header("language", "eng"))
+//                .baseUri(NUMBERS_URL)
+                .spec(new NumbersSpecifications().defaultRequestSpecification())
+                .pathParam("id",8/27)
                 .when()
-                .get("8/27/date")
+                .get(ID_PATH)
                 .then()
-                .log().all()
-                .statusCode(200)
-                .contentType(ContentType.TEXT);
+//                .log().all()
+//                .statusCode(200)
+//                .contentType(ContentType.TEXT);
+                .spec(new NumbersSpecifications().defaultResponseSpecification());
 
 
     }
-
-
 }
