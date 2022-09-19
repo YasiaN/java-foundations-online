@@ -27,11 +27,18 @@ public class NumbersSpecifications {
 
     }
 
-    public ResponseSpecification withoutExpectContentTypeResponseSpecification() {
+    public ResponseSpecification defaultResponseSpecificationWithoutExpectContentType() {
         return new ResponseSpecBuilder()
                .log(LogDetail.ALL)
                 .expectStatusCode(200)
                 .build();
+    }
+    public ResponseSpecification defaultResponseSpecificationWithStatusCodeChangedTo404(){
+        return new ResponseSpecBuilder()
+                .log(LogDetail.ALL)
+                .expectStatusCode(404)
+                .build();
+
     }
 
 

@@ -1,15 +1,6 @@
 package ru.buttonone.numbers;
 
 import io.restassured.RestAssured;
-import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.builder.ResponseSpecBuilder;
-import io.restassured.filter.log.LogDetail;
-import io.restassured.http.ContentType;
-import io.restassured.http.Header;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
-import io.restassured.specification.ResponseSpecification;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.buttonone.numbers.specification.NumbersSpecifications;
@@ -50,7 +41,7 @@ public class NumbersTest {
                 .then()
 //                .log().all()
 //                .statusCode(200);
-                .spec(new NumbersSpecifications().withoutExpectContentTypeResponseSpecification());
+                .spec(new NumbersSpecifications().defaultResponseSpecificationWithoutExpectContentType());
 
 
 
@@ -61,7 +52,7 @@ public class NumbersTest {
                 .then()
 //                .log().all()
 //                .statusCode(200);
-        .spec(new NumbersSpecifications().withoutExpectContentTypeResponseSpecification());
+        .spec(new NumbersSpecifications().defaultResponseSpecificationWithoutExpectContentType());
 
         given()
                 .baseUri(NUMBERS_URL)
